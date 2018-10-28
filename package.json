@@ -9,7 +9,7 @@
     "webpack": "webpack",
     "build": "npm run webpack -- --watch --mode=development",
     "start:dev": "npm run build & JWT_SECRET=section31 DATABASE_URL=postgres://localhost/acme_store nodemon server/server.js --ignore dist --ignore src",
-    "start": "node server/server.js"
+    "start": "JWT_SECRET=section31 node server/server.js"
   },
   "keywords": [],
   "author": "Andrew",
